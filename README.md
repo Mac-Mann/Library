@@ -10,7 +10,7 @@ This project was 100% coded by myself. The purpose is to get some practical expe
 
 ## Screenshot
 
-![Example screenshot]()
+![Example screenshot](https://github.com/Mac-Mann/Library/blob/master/image/Project_Snapshot.JPG)
 
 ## Highlights
 
@@ -23,7 +23,7 @@ This project was 100% coded by myself. The purpose is to get some practical expe
 
 ## Setup
 
-The live version of the website can be seen [here]().
+The live version of the website can be seen [here](https://mac-mann.github.io/Library/).
 
 ## Status
 
