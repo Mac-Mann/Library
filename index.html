@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"
+        integrity="sha256-9mbkOfVho3ZPXfM7W8sV2SndrGDuh7wuyLjtsWeTI1Q=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./app.js" defer></script>
+</head>
+
+<body>
+    <!-- UI CONTAINER -->
+    <div class="ui grid">
+        <div class="row">
+            <div class="ui icon inverted blue button" data-variation="huge" id="addBtn">
+                <i class="add icon"></i>
+            </div>
+        </div>
+
+        <div class="ui container">
+
+            <!-- UI FORM -->
+            <form class="ui form hide" action="#">
+
+                <div class="field">
+                    <label>Title</label>
+                    <input class="title" type="text" name="title" placeholder="Book Title" required>
+                </div>
+
+                <div class="field">
+                    <label>Author</label>
+                    <input class="author" type="text" name="author" placeholder="Book Author" required>
+                </div>
+
+                <div class="field">
+                    <label>Number of Pages</label>
+                    <input class="pages" type="text" name="pages" placeholder="123" required>
+                </div>
+
+                <div class="field">
+                    <div class="ui checkbox">
+                        <input class="readStatus" type="checkbox" tabindex="0">
+                        <label>Have Read?</label>
+                    </div>
+                </div>
+
+                <button class="ui huge inverted blue button" type="submit" id="submitBtn">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- UI TABLE -->
+    <table class="ui celled table">
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Author</th>
+                <th>Pages</th>
+                <th>Have Read?</th>
+                <th class="button-column">Delete?</th>
+            </tr>
+        </thead>
+        <tbody class="table-body">
+
+        </tbody>
+    </table>
+
+</body>
+</html>
