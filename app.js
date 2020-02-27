@@ -93,6 +93,7 @@ var UIController = (function () {
         table: ".table",
         tableBody: ".table-body",
         titleTextElement: ".title",
+        toggleIcon: ".toggleIcon",
         trashBtn: "#trashBtn"
     };
     // Return object items that are needed for sharing between objects or accessing in browser console window
@@ -117,8 +118,14 @@ var UIController = (function () {
         toggleDisplay: function () {
             var form = document.querySelector(DOMstrings.form);
             var table = document.querySelector(DOMstrings.table);
+            var toggleIcon = document.querySelector(DOMstrings.toggleIcon);
+            var addBtn = document.querySelector(DOMstrings.addBtn);
             form.className.split(" ")[2] === "hide" ? form.className = "ui form show" : form.className = "ui form hide";
             form.className.split(" ")[2] === "hide" ? table.className = "ui celled table" : table.className = "ui celled table hide";
+            // tslint:disable-next-line: max-line-length
+            form.className.split(" ")[2] === "hide" ? toggleIcon.className = "add icon toggleIcon" : toggleIcon.className = "close icon toggleIcon";
+            // tslint:disable-next-line: max-line-length
+            form.className.split(" ")[2] === "hide" ? addBtn.className = "ui icon inverted green button" : addBtn.className = "ui icon inverted red button";
         },
         getDOMstrings: function () {
             return DOMstrings;

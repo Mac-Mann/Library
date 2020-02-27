@@ -14,13 +14,24 @@
 </head>
 
 <body>
+    <!-- UI TABLE -->
+    <table class="ui celled table">
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Author</th>
+                <th>Pages</th>
+                <th>Have Read?</th>
+                <th class="button-column">Delete?</th>
+            </tr>
+        </thead>
+        <tbody class="table-body">
+        </tbody>
+    </table>
+
     <!-- UI CONTAINER -->
     <div class="ui grid">
-        <div class="row">
-            <div class="ui icon inverted blue button" data-variation="huge" id="addBtn">
-                <i class="add icon"></i>
-            </div>
-        </div>
+
 
         <div class="ui container">
 
@@ -39,7 +50,7 @@
 
                 <div class="field">
                     <label>Number of Pages</label>
-                    <input class="pages" type="text" name="pages" placeholder="123" required>
+                    <input class="pages" type="number" name="pages" placeholder="123" required>
                 </div>
 
                 <div class="field">
@@ -52,23 +63,15 @@
                 <button class="ui huge inverted blue button" type="submit" id="submitBtn">Submit</button>
             </form>
         </div>
-    </div>
 
-    <!-- UI TABLE -->
-    <table class="ui celled table">
-        <thead>
-            <tr>
-                <th>Title</th>
-                <th>Author</th>
-                <th>Pages</th>
-                <th>Have Read?</th>
-                <th class="button-column">Delete?</th>
-            </tr>
-        </thead>
-        <tbody class="table-body">
+        <div class="row">
+            <div class="ui icon inverted green button" data-variation="huge" id="addBtn">
+                <i class="add icon toggleIcon"></i>
+            </div>
+        </div>
 
-        </tbody>
-    </table>
+
 
 </body>
+
 </html>
